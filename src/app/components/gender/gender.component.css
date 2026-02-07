@@ -1,0 +1,24 @@
+.gender {
+  display: flex;
+  flex-direction: column;
+  padding: 48px 160px;
+}
+
+.books-by-gender {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+
+.small-highligth-line {
+  width: 32px;
+}
+
+.text {
+  font-family: var(--font-prata);
+  font-size: 28px;
+  font-weight: var(--font-weight-normal);
+  line-height: 38px;
+  text-align: center;
+}

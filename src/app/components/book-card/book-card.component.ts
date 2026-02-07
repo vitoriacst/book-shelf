@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { Book } from '../book/book';
+import { Component, input } from '@angular/core';
+import { Book } from '../interfaces/book';
 
 @Component({
   selector: 'app-book-card',
@@ -9,16 +9,11 @@ import { Book } from '../book/book';
 })
 export class BookCardComponent {
 
+   book = input.required<Book>();
+
+  constructor(){}
+
   onHandleSwitchFavorite(){
-    this.book.isFavorite = !this.book.isFavorite
-
-  }
-
-  book: Book = {
-    title: "É assim que acaba",
-    authorship:"Collen Hover",
-    image: "https://m.media-amazon.com/images/I/81jqGtBE2qL._AC_UF1000,1000_QL80_.jpg",
-    gender:'Romance',
-    isFavorite: true
+    this.book().isFavorite = !this.book().isFavorite
   }
 }

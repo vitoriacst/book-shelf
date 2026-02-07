@@ -4,3 +4,8 @@
   </h2>
   <span class="highligth-line bigger-highlight-line"></span>
 </section>
+
+
+@for(gender of genders; track gender){
+  <app-gender [gender]="gender"></app-gender>
+}
