@@ -1,0 +1,14 @@
+<section>
+  <button class="fav-btn" (click)="onHandleSwitchFavorite()">
+    <span>
+      {{book.isFavorite ?'\u2764' : '\u2661'}}
+    </span>
+  </button>
+  <div class="image">
+    <img [src]="book.image" alt="">
+  </div>
+  <div class="book-info">
+    <h2 class="title">{{book.title}}</h2>
+    <h3 class="authorship">{{book.authorship}}</h3>
+  </div>
+</section>
