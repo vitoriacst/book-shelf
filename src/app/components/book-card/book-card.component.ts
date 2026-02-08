@@ -1,9 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { Component, input } from '@angular/core';
 import { Book } from '../interfaces/book';
 
 @Component({
   selector: 'app-book-card',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './book-card.component.html',
   styleUrl: './book-card.component.css'
 })

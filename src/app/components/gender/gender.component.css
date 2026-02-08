@@ -1,4 +1,4 @@
-.gender {
+.genders {
   display: flex;
   flex-direction: column;
   padding: 48px 160px;
@@ -11,7 +11,7 @@
   justify-content:center;
 }
 
-.small-highligth-line {
+.linha-destaque--pequena {
   width: 32px;
 }
 
@@ -21,4 +21,50 @@
   font-weight: var(--font-weight-normal);
   line-height: 38px;
   text-align: center;
+}
+
+.text img {
+    width: 150px;
+    margin-top: 8px;
+    opacity: 0.8;
+}
+
+.romance {
+  background-color: #E8FFFF;
+}
+
+.genders .romance {
+  border-bottom: 4px solid #82CFFA;
+}
+
+.misterio {
+  background-color: #E9FFE3;
+}
+
+.genders .misterio {
+  border-bottom: 4px solid #A6D157;
+}
+
+.fantasia {
+  background-color: #FFE3E3;
+}
+
+.genders .fantasia {
+  border-bottom: 4px solid #E06B69;
+}
+
+.ficcao-cientifica {
+  background-color: #FFF0FA;
+}
+
+.genders .ficcao-cientifica {
+  border-bottom: 4px solid #DB6EBF;
+}
+
+.tecnicos {
+  background-color: #FFF1E4;
+}
+
+.genders .tecnicos {
+  border-bottom: 4px solid #FF8A29;
 }

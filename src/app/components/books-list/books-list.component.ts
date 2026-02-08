@@ -36,7 +36,7 @@ export class BooksListComponent implements OnInit {
        {
         id: 'misterio',
         value: 'Mistério',
-        books: this.booksByGender.get("misterio") ?? []
+        books: this.booksByGender.get("mistério") ?? []
     },
     {
         id: 'fantasia',

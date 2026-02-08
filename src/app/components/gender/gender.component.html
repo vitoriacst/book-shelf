@@ -1,13 +1,12 @@
 
-<div>
-  <section class="gender">
+  <section  clas="gemders" [ngClass]="gender().id">
     <h3 class="text">
       {{gender().value}}
     </h3>
-    <span class="small-highligth-line">
+    <span class="linha-destaque linha-destaque--pequena" [ngClass]="gender().id">
     @if(gender().books.length === 0) {
-    <div class="texto-sem-livros">
-      <img src="sem-livros.png" alt="Sem livros neste gênero">
+    <div class="text">
+      <img src="without-books.png" alt="Sem livros neste gênero">
       <p>Não há livros neste gênero ainda</p>
     </div>
   }
@@ -18,4 +17,3 @@
       }
     </div>
   </section>
-</div>
